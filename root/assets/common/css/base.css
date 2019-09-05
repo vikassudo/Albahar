@@ -1,0 +1,155 @@
+/******************************************************
+                    Base CSS 
+******************************************************/
+/******************************************************
+              Rubik Google Font
+******************************************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prata&display=swap&subset=cyrillic');
+/******************************************************
+						Root
+******************************************************/
+:root {
+	/* Colors Var */
+	--black-col: #000000; --light-grey-col: #D8D7D7; --grey-col-font: #CFCFCF; --yellow-col-brdr: #FFC81F; --light-black-col: #1D1D1D; 
+	--yellow-col: #ECBE32; --light-grey-p-col: #989696; --yellow-col-brdr: #FFC81F; 
+	--grey-col-brdr: #707070; --white-col:#FFFFFF; --light-grey-col-brdr: #6C7B8A;
+	/* Font Family Var */
+	--primary-font-family: 'Montserrat', sans-serif;
+	--secondary-font-family: 'Prata', serif;
+	/* Font Sizes Var */
+	--primary-font-size: 20px; --secondary-font-size: 13px; --font-size: 18px; --small-font-size: 12px;
+	--heading-size: 26px;
+	/* Font Weight Var */
+	--normal-font-weight: 400; --medium-font-weight: 500; --light-font-weight:100;
+	/* Font Line Height Var */
+	--primary-font-line-height: 15px; --secondary-font-line-height: 19px; --textbig-font-line-height: 21px; --text-small-line-height: 25px;
+	/* Form Width Var */
+	--login-form-width: 390px; --column--1-by-6th: 16.6666666667%;
+	/* Height Full */
+	--height-full: 100%;
+	
+}
+/******************************************************
+                  All Classes And Tags
+******************************************************/
+html,body{
+	/*height: var(--height-full);*/
+}
+*,html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  	display: block;
+}
+ol, ul {
+  	list-style: none;
+}
+ol li,
+ul li{
+	display: inline-block;
+}
+blockquote, q {
+  	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  	content: '';
+  	content: none;
+}
+table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+}
+
+a{ 
+	outline: 0px; 
+	text-decoration: none;
+	-webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+a:active, 
+a:focus, 
+a:hover, 
+a:link { 
+	text-decoration: none; 
+	-webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+	outline: 0px; 
+} 
+body{  
+	font-family: var(--primary-font-family);
+	font-weight: var(--normal-font-weight);
+	color: var(--grey-col);
+	font-size: var(--primary-font-size);
+	line-height: var(--primary-font-line-height);
+	background-color: var(--light-black-col);
+}
+img{ 
+	max-width:100%; 
+	vertical-align: middle;
+}
+/******************************************************
+                    Common Classes Start 
+******************************************************/
+.relative{
+    position: relative;
+}
+.absolute{ 
+	position: absolute; 
+}
+.fixed{ 
+	position: fixed; 
+}
+.static{ 
+	position: static; 
+}
+.clr{ 
+	clear: both; 
+}
+.width_full{
+	width: 100% !important;
+}
+.height_full{
+	height: 100% !important;
+}
+.height_auto{ 
+	height: auto !important;
+}
+.no_margin{ 
+	margin: 0px !important;
+}
+.no_padding{
+	padding: 0px !important;
+}
+.float_right{
+	float: right;
+}
+.float_left{
+	float: left;
+}
+.float_none{
+	float: none;
+}
