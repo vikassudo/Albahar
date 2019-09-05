@@ -14,6 +14,7 @@
 	--black-col: #000000; --light-grey-col: #D8D7D7; --grey-col-font: #CFCFCF; --yellow-col-brdr: #FFC81F; --light-black-col: #1D1D1D; 
 	--yellow-col: #ECBE32; --light-grey-p-col: #989696; --yellow-col-brdr: #FFC81F; 
 	--grey-col-brdr: #707070; --white-col:#FFFFFF; --light-grey-col-brdr: #6C7B8A;
+	--placeholder-col: #B3B3B3;
 	/* Font Family Var */
 	--primary-font-family: 'Montserrat', sans-serif;
 	--secondary-font-family: 'Prata', serif;
@@ -152,4 +153,7 @@ img{
 }
 .float_none{
 	float: none;
+}
+.btn.focus, .btn:focus{
+	box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
 }
